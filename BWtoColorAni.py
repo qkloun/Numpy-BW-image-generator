@@ -18,10 +18,6 @@ def img2gray(img):
 
 def Animation(img,gimg,steps=30):
     
-    #if img.shape != gimg.shape:
-    #    print("Error: the two images have different shapes.", file=sys.stderr)
-    #    exit(2)
-        
     svalues = np.hstack([np.linspace(0.0, 1.0, steps), np.linspace(1.0, 0, steps)])
     
     img_float = img.astype(np.float32)
